@@ -17,14 +17,26 @@
             height: 50px;
             width: 50px;
         }
+        .corTexto{
+            color: black;
+        }
+        span{
+            padding-left: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+        }
+        nav{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3rem;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- MENU / NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Vingadores</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#"> <img src="https://i.pinimg.com/originals/6b/b7/36/6bb736b16f5c541047342306fade5098.png" height="50px"  alt=""> <span>Avengers</span>  </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -173,23 +185,22 @@
         <!-- Texto e video -->
         <div class="row mt-5 mb-6">
             <div class="col-md-6">
-                <h3> Texto teste</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perferendis aliquam obcaecati
-                    praesentium accusamus, doloremque saepe, provident quis est amet nam! Accusantium saepe alias
-                    suscipit aperiam sit vitae nulla aliquid!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui hic quae distinctio incidunt, eius
-                    architecto quo perferendis debitis enim ducimus ullam minus ab voluptatum amet, inventore, tenetur
-                    quod velit ratione.</p>
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae molestias tempora quae doloribus
-                    earum odio eligendi, similique accusamus, consequatur sed ex assumenda alias consequuntur nesciunt
-                    optio ipsa quia explicabo tempore!</P>
+                <a href="https://www.adorocinema.com/filmes/filme-232669/criticas-adorocinema/" target="_blank">
+                    <h3 class="text-center corTexto"> CRÍTICAS ADOROCINEMA </h3>
+                </a> 
+                <p>Mais do que qualquer filme precedente do Universo Cinematográfico Marvel, Vingadores: Ultimato serve a pensar a maneira como as fantasias de super-heróis representam o nosso medo de lidar com a morte.</p>
+                <p>Os personagens possuem poderes excepcionais, que a princípio garantiriam uma chance de sobrevivência superior àquela dos seres humanos comuns. No entanto, os protagonistas são ameaçados o tempo inteiro, enfrentando adversários igualmente poderosos.</p>
+                <P>No universo dos quadrinhos, heróis morrem a todo instante – e também ressuscitam com frequência, em virtude de magias e novos desenvolvimentos tecnológicos.</P>
             </div>
 
             <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dwq_HbHJ3jY"
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dwq_HbHJ3jY" allowfullscreen></iframe>
+                  </div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dwq_HbHJ3jY"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen></iframe> -->
             </div>
         </div>
         <!-- /Texto e video -->
@@ -197,8 +208,8 @@
 
         <!-- Formulario -->
 
-        <div class="row mb-3">
-            <div class="col-md-12">
+        <div class="row mb-5">
+            <div class="col-md-12 mt-3">
                 <h4 class="text-center">
                     Entre em contato com a gente!
                 </h4>
