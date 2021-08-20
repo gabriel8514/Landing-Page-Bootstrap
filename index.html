@@ -219,10 +219,11 @@
         <div class="row">
             <div class="col-md-6">
                 <form>
-                    <div class="form-group">
+                    <div class="form-group" onkeyup="validarEmail()">
                       <label for="exampleFormControlInput1">Endereço de email</label>
                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
                     </div>
+                    <div id="txtemail"> </div>
                     <div class="form-group">
                       <label for="exampleFormControlSelect1">Selecione o seu vingador favorito</label>
                       <select class="form-control" id="exampleFormControlSelect1">
@@ -238,7 +239,7 @@
                     </div>
 
                     <div class="form-group d-flex justify-content-end">
-                        <button class="btn btn-outline-dark" onclick="validarEmail()">Enviar</button>
+                        <button class="btn btn-outline-dark" >Enviar</button>
                     </div>
                   </form>
             </div>
@@ -285,12 +286,16 @@
         let email = document.querySelector("#exampleFormControlInput1") 
 
         function validarEmail(){
+            let txtEmail = document.querySelector("#txtemail")
+            
             if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1 ) {
-                alert ("E-mail invalido, favor verificar!")
-            } else {
-                alert ("Enviado")
-            }
+                txtEmail.innerHTML = "E-mail invalido, favor verificar!"
+                txtEmail.style.color = "red"
+        } else{
+            txtEmail.innerHTML = "E-mail Válido" 
+            txtEmail.style.color = "green"
         }
+    }
 
     </script>
 
